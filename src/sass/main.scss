@@ -1,3 +1,16 @@
 body {
+  display: flex;
   background-color: gray;
+  justify-content: center;
+  align-items: center;
+}
+input[type="text"] {
+  border: 0 none;
+  width: 8rem;
+}
+li:nth-child(2n) {
+  background-color: antiquewhite;
+}
+li {
+  list-style: none;
 }
