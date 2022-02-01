@@ -10,10 +10,12 @@ const List = (props) => {
       ...prevState,
       { id: prevState.length, title: userInput.trim(), done: false },
     ]);
+    setUserInput("");
+    console.log(userInput);
   }
 
   return (
-    <form type={submitHandle}>
+    <form onSubmit={submitHandle}>
       <input type="text" value={userInput} onChange={changeHendle} />
       <input type="submit" value="Add" />
     </form>
